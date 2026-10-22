@@ -1,0 +1,72 @@
+{
+    "student": "Afnan Khan",
+    "dataset": "PathMNIST",
+    "seed": 101,
+    "n_classes": 4,
+    "class_names": [
+        "Adipose",
+        "Complex Stroma",
+        "Lymphocytes",
+        "Carcinoma"
+    ],
+    "n_total_features": 2304,
+    "n_selected_features": 467,
+    "reduction_pct": 79.73,
+    "best_ga_setting": "Setting 1 (High-Fidelity GA: Pop=35, Mut=0.05)",
+    "baseline_metrics": {
+        "accuracy": 91.18,
+        "precision_macro": 91.45,
+        "recall_macro": 91.18,
+        "macro_f1": 91.12,
+        "weighted_f1": 91.15,
+        "balanced_accuracy": 91.18,
+        "specificity_macro": 97.06,
+        "cohen_kappa": 0.8824,
+        "matthews_corrcoef": 0.883,
+        "latency_ms": 0.228
+    },
+    "proposed_metrics": {
+        "accuracy": 97.06,
+        "precision_macro": 97.2,
+        "recall_macro": 97.06,
+        "macro_f1": 97.02,
+        "weighted_f1": 97.04,
+        "balanced_accuracy": 97.06,
+        "specificity_macro": 99.02,
+        "cohen_kappa": 0.9608,
+        "matthews_corrcoef": 0.9612,
+        "latency_ms": 0.048
+    },
+    "improvements": {
+        "accuracy": 5.88,
+        "precision_macro": 5.75,
+        "recall_macro": 5.88,
+        "macro_f1": 5.9,
+        "weighted_f1": 5.89,
+        "balanced_accuracy": 5.88,
+        "specificity_macro": 1.96,
+        "cohen_kappa": 0.0784,
+        "matthews_corrcoef": 0.0782,
+        "latency_speedup_x": 4.75
+    },
+    "ga_setting1": {
+        "name": "Setting 1 (High-Fidelity GA: Pop=35, Mut=0.05)",
+        "pop_size": 35,
+        "mutation_rate": 0.05,
+        "crossover": "Two-Point",
+        "selection": "Tournament",
+        "alpha": 0.88,
+        "best_fitness": 0.938,
+        "final_features": 467
+    },
+    "ga_setting2": {
+        "name": "Setting 2 (Adaptive Roulette GA: Pop=45, Mut=0.07)",
+        "pop_size": 45,
+        "mutation_rate": 0.07,
+        "crossover": "Uniform",
+        "selection": "Roulette",
+        "alpha": 0.78,
+        "best_fitness": 0.9145,
+        "final_features": 530
+    }
+}
